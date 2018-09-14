@@ -103,7 +103,7 @@ def namegender(inputname):
 
 def initnames():
     for year in range(startyear,endyear):
-        with open('names/yob' + str(2000) + '.txt') as yob:
+        with open('namedata/yob' + str(2000) + '.txt') as yob:
             reader=csv.reader(yob, delimiter=',')
             for row in reader:
                 updatenames(row[0],row[1],int(row[2]))
